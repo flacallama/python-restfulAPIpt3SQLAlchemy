@@ -71,7 +71,7 @@ class Item(Resource):
 
         # since models.item.py - we need to convert this to an ItemModel object
         # item = {'name': name, 'price': data['price']}
-        git  = ItemModel(name, data['price'])
+        item = ItemModel(name, data['price'])
 
         # if there's an exception use this:
         try:
